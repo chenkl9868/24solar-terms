@@ -7,7 +7,7 @@
 	body{
 		margin: 0;
 	}
-	.box{
+	.cc{
 		position: relative;
 		width: 1000px;
 		height: 620px;
@@ -53,19 +53,65 @@
 	}
 	#w3{
 		position: absolute;
-		top:200px;
+		top:190px;
 		left: 155px;
 		font-size: 22pt;
 	}
 	#w4{
 		position: absolute;
-		top:250px;
-		left: 300px;
-		font-size: 35pt;
+		top:220px;
+		left: 210px;
+		font-size: 32pt;
+	}
+	#pinyin{
+		color:#E6ED98;
+		font-size: 20pt;
+		margin-left: 60px;
+		margin-top: -20px;
+	}
+	#daoyu{
+		margin-left: -63px;
+		margin-top: -20px;
+	}
+	#anniu{
+		position: absolute;
+		margin-top: -30px;
+		margin-left: 100px;
+	}
+	#f1{
+		position: absolute;
+		top:20px;
+		left: 32px;
+	}
+	#f2{
+		position: absolute;
+		top:122px;
+		left: 32px;
+	}
+	#f3{
+		position: absolute;
+		top:188px;
+		left: 32px;
+	}
+	#f4{
+		position: absolute;
+		top:252px;
+		left: 32px;
+	}
+	#return{
+		position: absolute;
+		top:520px;
+		left:840px;
+	}
+	#return:hover{
+		cursor: pointer;
+		transform:scale(1.1);
 	}
 </style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
 <script type="text/javascript">
-	function show(num)
+function show(num)
 	{
 		for(var i=1;i<=4;i++)
 			{
@@ -76,11 +122,15 @@
 			}
 		document.getElementById("w"+num).style.display="block";
 	}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
 </script>
 </head>
 
 <body>
-<div class="box">
+<div class="cc">
 	<div>
 	<img src="images/song.png" alt="" width="180px" height="90px" id="daohang1" onClick="show(1);">
 	</div>
@@ -104,7 +154,8 @@
 		春雨惊春清谷天，夏满芒夏暑相连。<br>
 		秋处露秋寒霜降，冬雪雪冬小大寒。<br>
 		每月两节不变更，最多相差一两天。<br>
-		上半年来六廿一，下半年是八廿三。
+		上半年来六廿一，下半年是八廿三。<br>
+		<p id="pinyin">(廿：<font face="Arial" size="+2">niàn</font>)</p>
 	</p>                                                                                               
 	</div>
 		
@@ -113,15 +164,27 @@
 	</div>
 		
 	<div id="w3" style="display: none">
-	<p>反映四季变化：二分（春分、秋分），二至<br>（夏至、冬至），四立（立春、立夏、立秋、<br>立冬）<br>
-	反映温度变化：小暑、大暑、处暑、小寒、<br>大寒<br>
-	&nbsp;&nbsp;反映天气现象：雨水、谷雨、白露、寒露、<br>&nbsp;&nbsp;&nbsp;霜降、小雪、大雪<br>
-	&nbsp;&nbsp;&nbsp;反映物候现象：惊蛰、清明、小满、芒种
-	</p>	
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映四季变化：二分（春分、秋分），<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二至（夏至、冬至），四立（立春、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立夏、立秋、立冬）<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映温度变化：小暑、大暑、处暑、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小寒、大寒<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映天气现象：雨水、谷雨、白露、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寒露、霜降、小雪、大雪<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映物候现象：惊蛰、清明、小满、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;芒种
+	</p>
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f1">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f2">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f3">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f4">
 	</div>
+	
 	<div id="w4" style="display: none">
-	<p>继续学习吧！</p>
+	<p>别返回啦，继续学习吧！</p>
+	<p id="daoyu">二十四节气的小故事在等你呐<font face="楷体">~</font></p>
+	<img src="images/fenbistart.png" alt="" width="200px" height="160px" id="anniu">
 	</div>
+	</div>
+	
+	<div>
+	<a href="contents.html">
+	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)"></a>
 	</div>
 </div>
 </body>
