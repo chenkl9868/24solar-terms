@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>二十四节气知多少-知识小课堂</title>
+<style type="text/css">
+	body{
+		margin: 0;
+	}
+	.cc{
+		position: relative;
+		width: 1000px;
+		height: 620px;
+		margin: 0 auto;
+		background-image: url(images/knowledgebk.jpg);
+	}
+	#daohang1{
+		position: absolute;
+		top:190px;
+		left:760px;
+	}
+	#daohang2{
+		position: absolute;
+		top:280px;
+		left:760px;
+	}
+	#daohang3{
+		position: absolute;
+		top:372px;
+		left:760px;
+	}
+	#daohang4{
+		position: absolute;
+		top:460px;
+		left: 760px;
+	}
+	.word{
+		color: #F5F0F0;
+		font-family:隶书;
+		overflow: hidden;
+	}
+	#w1{
+		position: absolute;
+		top:170px;
+		left: 180px;
+		font-size: 25pt;
+	}
+	#w2{
+		position: absolute;
+		top:200px;
+		left: 180px;
+		font-size: 25pt;
+	}
+	#w3{
+		position: absolute;
+		top:190px;
+		left: 155px;
+		font-size: 22pt;
+	}
+	#w4{
+		position: absolute;
+		top:220px;
+		left: 210px;
+		font-size: 32pt;
+	}
+	#pinyin{
+		color:#E6ED98;
+		font-size: 20pt;
+		margin-left: 60px;
+		margin-top: -20px;
+	}
+	#daoyu{
+		margin-left: -63px;
+		margin-top: -20px;
+	}
+	#anniu{
+		position: absolute;
+		margin-top: -30px;
+		margin-left: 100px;
+	}
+	#f1{
+		position: absolute;
+		top:20px;
+		left: 32px;
+	}
+	#f2{
+		position: absolute;
+		top:122px;
+		left: 32px;
+	}
+	#f3{
+		position: absolute;
+		top:188px;
+		left: 32px;
+	}
+	#f4{
+		position: absolute;
+		top:252px;
+		left: 32px;
+	}
+	#return{
+		position: absolute;
+		top:520px;
+		left:840px;
+	}
+	#return:hover{
+		cursor: pointer;
+		transform:scale(1.1);
+	}
+	#p1{
+		position: absolute;
+		top:190px;
+		left: 796px;
+		font-family: 幼圆;
+		font-size: 22pt;
+		font-weight: bolder;
+	}
+	#p2{
+		position: absolute;
+		top:278px;
+		left: 815px;
+		font-family: 幼圆;
+		font-size: 22pt;
+		font-weight: bolder;
+	}
+	#p3{
+		position: absolute;
+		top:372px;
+		left:815px;
+		font-family: 幼圆;
+		font-size: 22pt;
+		font-weight: bolder;
+	}
+	#p4{
+		position: absolute;
+		top:460px;
+		left: 815px;
+		font-family: 幼圆;
+		font-size: 22pt;
+		font-weight: bolder;
+	}
+	.sec_on{
+		color:#E8D525;
+	}
+	.sec_off{
+		color:#F3DEDE;
+	}
+	p:hover{
+		cursor: pointer;
+	}
+</style>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function show(num)
+	{
+		for(var i=1;i<=4;i++)
+			{
+				document.getElementById("w1").style.display="none";
+				document.getElementById("w2").style.display="none";
+				document.getElementById("w3").style.display="none";
+				document.getElementById("w4").style.display="none";
+			}
+		document.getElementById("w"+num).style.display="block";
+	}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+</script>
+</head>
+
+<body>
+<div class="cc">
+	<div>
+	<img src="images/pencil.png" alt="" width="180px" height="90px" id="daohang1"  onClick="show(1);javascript:p1.className='sec_on';p2.className='sec_off';p3.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p1" class="sec_on" onclick="show(1);javascript:p1.className='sec_on';p2.className='sec_off';p3.className='sec_off';p4.className='sec_off';">节气歌</p>
+	
+	
+	<div>
+	<img src="images/pencil.png" alt="" width="180px" height="90px" id="daohang2" onClick="show(2);javascript:p2.className='sec_on';p1.className='sec_off';p3.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p2" class="sec_off" onclick="show(2);javascript:p2.className='sec_on';p1.className='sec_off';p3.className='sec_off';p4.className='sec_off';">起源</p>
+	
+	<div>
+	<img src="images/pencil.png" alt="" width="180px" height="92px" id="daohang3" onClick="show(3);javascript:p3.className='sec_on';p1.className='sec_off';p2.className='sec_off';p4.className='sec_off';">
+	</div>
+	<p id="p3" class="sec_off" onclick="show(3);javascript:p3.className='sec_on';p1.className='sec_off';p2.className='sec_off';p4.className='sec_off';">分类</p>
+	
+	<div>
+	<img src="images/pencil.png" alt="" width="180px" height="90px" id="daohang4" onClick="show(4);javascript:p4.className='sec_on';p1.className='sec_off';p2.className='sec_off';p3.className='sec_off';">
+	</div>
+	<p id="p4" class="sec_off" onclick="show(4);javascript:p4.className='sec_on';p1.className='sec_off';p2.className='sec_off';p3.className='sec_off';">返回</p>
+	
+  <div class="word">
+	<div id="w1">
+	<p align="center"><b>二十四节气歌</b></p>
+	<p>
+		春雨惊春清谷天，夏满芒夏暑相连。<br>
+		秋处露秋寒霜降，冬雪雪冬小大寒。<br>
+		每月两节不变更，最多相差一两天。<br>
+		上半年来六廿一，下半年是八廿三。<br>
+		<p id="pinyin">(廿：<font face="Arial" size="+2">niàn</font>)</p>
+	</p>                                                                                               
+	</div>
+		
+	<div id="w2" style="display: none">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;二十四节气起源于黄河流域。人<br>们根据月初、月中的日月运行位置和<br>天气及动植物生长等自然现象，利用<br>之间的关系，把一年平分为二十四等<br>份。并且给每个等份取了个专有名称<br>&nbsp;，这就是二十四节气。</p>	
+	</div>
+		
+	<div id="w3" style="display: none">
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映四季变化：二分（春分、秋分），<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二至（夏至、冬至），四立（立春、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立夏、立秋、立冬）<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映温度变化：小暑、大暑、处暑、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小寒、大寒<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映天气现象：雨水、谷雨、白露、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寒露、霜降、小雪、大雪<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;反映物候现象：惊蛰、清明、小满、<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;芒种
+	</p>
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f1">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f2">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f3">
+	<img src="images/flower.png" alt="" width="50px" height="50px" id="f4">
+	</div>
+	
+	<div id="w4" style="display: none">
+	<p>别返回啦，继续学习吧！</p>
+	<p id="daoyu">二十四节气的小故事在等你呐<font face="楷体">~</font></p>
+	<img src="images/fenbistart.png" alt="" width="200px" height="160px" id="anniu">
+	</div>
+	</div>
+	
+	<div>
+	<a href="contents.html">
+	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)"></a>
+	</div>
+</div>
+</body>
+</html>
