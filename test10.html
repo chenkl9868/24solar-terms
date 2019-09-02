@@ -33,21 +33,11 @@
 	#anniu2{
 		position: absolute;
 		top:90px;
-		left:250px;
-	}
-	#anniu3{
-		position: absolute;
-		top:150px;
-		left:50px;
-	}
-	#anniu4{
-		position: absolute;
-		top:150px;
-		left:250px;
+		left:220px;
 	}
 	#tijiao{
 		position: absolute;
-		top:200px;
+		top:180px;
 		left:210px;
 		width: 70px;
 		height: 40px;
@@ -64,32 +54,22 @@
 	}
 	#true{
 		position: absolute;
-		top:140px;
-		left:150px;
+		top:80px;
+		left:275px;
 	}
 	#false1{
 		position: absolute;
 		top:80px;
-		left:150px;
-	}
-	#false2{
-		position: absolute;
-		top:80px;
-		left:350px;
-	}
-	#false3{
-		position: absolute;
-		top:140px;
-		left:350px;
+		left:105px;
 	}
 	#tishi{
 		position: absolute;
-		top: 206px;
+		top: 185px;
 		left: 300px;
 		font-size: 18pt;
 		color: #DF4446;
 		font-weight: bolder;
-	}
+	}	
 	#return{
 		position: absolute;
 		top:520px;
@@ -132,39 +112,19 @@ function myfunction()
 		var daan=document.myform.answer.value;
 		if(daan=="answer1")
 			{
-				document.getElementById("false1").style.display="block";
 				document.getElementById("true").style.display="none";
-				document.getElementById("false2").style.display="none";
-				document.getElementById("false3").style.display="none";
+				document.getElementById("false1").style.display="block";
 			}
 		else if(daan=="answer2")
 			{
-				document.getElementById("false2").style.display="block";
 				document.getElementById("false1").style.display="none";
-				document.getElementById("true").style.display="none";
-				document.getElementById("false3").style.display="none";
-			}
-		else if(daan=="answer3")
-			{
 				document.getElementById("true").style.display="block";
-				document.getElementById("false2").style.display="none";
-				document.getElementById("false1").style.display="none";
-				document.getElementById("false3").style.display="none";
-			}
-		else if(daan=="answer4")
-			{
-				document.getElementById("false3").style.display="block";
-				document.getElementById("true").style.display="none";
-				document.getElementById("false1").style.display="none";
-				document.getElementById("false2").style.display="none";
 			}
 		else
 			{
 				document.getElementById("tishi").style.display="block";
 				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="none";
-				document.getElementById("false2").style.display="none";
-				document.getElementById("false3").style.display="none";
 			}
 	}
 function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
@@ -177,23 +137,17 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 <body>
 <div class="ee">
 	<div id="timu">
-	<h2>4.“小荷才露尖尖角，早有蜻蜓立上头”蜻蜓翩翩起舞，这是在描述哪一节气的现象（&nbsp;&nbsp;）</h2>
+	<h2>10.二十四节气中的最后一个节气是大雪</h2>
 	<form action="" method="post" name="myform" id="myform">
 		<ul style="list-style: none">
 		<li id="anniu1">
-		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">A.春分</li>
+		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';">对</li>
 		<li id="anniu2">
-		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.白露</li>
-		<li id="anniu3">
-		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.小满</li>
-		<li id="anniu4">
-		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.夏至</li>
+		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';">错</li>
 		</ul>
 		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
-		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
+		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display:none">
 		<img src="images/false.png" alt="" width="50px" height="50px" id="false1" style="display: none">
-	    <img src="images/false.png" alt="" width="50px" height="50px" id="false2" style="display: none">
-	    <img src="images/false.png" alt="" width="50px" height="50px" id="false3" style="display: none">
 	  <div id="tishi" style="display: none">还没答题哦！</div>
 	</form>
 	</div>
@@ -203,13 +157,10 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	</div>
 	
 	<div>
-	<a href="test3.html">
+	<a href="test9.html">
 	<img src="images/zuojiantou.png" alt="" width="130px" height="80px" id="syy"></a>
 	</div>
-	<div>
-	<a href="test5.html">
-	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
-	</div>
+	
 </div>
 </body>
 </html>

@@ -132,22 +132,22 @@ function myfunction()
 		var daan=document.myform.answer.value;
 		if(daan=="answer1")
 			{
-				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="block";
+				document.getElementById("true").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
 			}
 		else if(daan=="answer2")
 			{
+				document.getElementById("false2").style.display="block";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("true").style.display="none";
-				document.getElementById("false2").style.display="block";
 				document.getElementById("false3").style.display="none";
 			}
 		else if(daan=="answer3")
 			{
-				document.getElementById("false2").style.display="none";
 				document.getElementById("true").style.display="block";
+				document.getElementById("false2").style.display="none";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false3").style.display="none";
 			}
@@ -190,9 +190,9 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.夏至</li>
 		</ul>
 		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
+		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
 		<img src="images/false.png" alt="" width="50px" height="50px" id="false1" style="display: none">
 	    <img src="images/false.png" alt="" width="50px" height="50px" id="false2" style="display: none">
-	    <img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
 	    <img src="images/false.png" alt="" width="50px" height="50px" id="false3" style="display: none">
 	  <div id="tishi" style="display: none">还没答题哦！</div>
 	</form>
@@ -201,13 +201,14 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	<a href="contents.html">
 	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)"></a>
 	</div>
-	<div>
-	<a href="test3.html">
-	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
-	</div>
+	
 	<div>
 	<a href="test1.html">
 	<img src="images/zuojiantou.png" alt="" width="130px" height="80px" id="syy"></a>
+	</div>
+	<div>
+	<a href="test3.html">
+	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
 	</div>
 </div>
 </body>

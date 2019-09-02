@@ -65,7 +65,7 @@
 	#true{
 		position: absolute;
 		top:140px;
-		left:150px;
+		left:350px;
 	}
 	#false1{
 		position: absolute;
@@ -80,7 +80,7 @@
 	#false3{
 		position: absolute;
 		top:140px;
-		left:350px;
+		left:150px;
 	}
 	#tishi{
 		position: absolute;
@@ -140,21 +140,21 @@ function myfunction()
 		else if(daan=="answer2")
 			{
 				document.getElementById("false2").style.display="block";
-				document.getElementById("false1").style.display="none";
 				document.getElementById("true").style.display="none";
+				document.getElementById("false1").style.display="none";
 				document.getElementById("false3").style.display="none";
 			}
 		else if(daan=="answer3")
 			{
-				document.getElementById("true").style.display="block";
+				document.getElementById("false3").style.display="block";
 				document.getElementById("false2").style.display="none";
+				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="none";
-				document.getElementById("false3").style.display="none";
 			}
 		else if(daan=="answer4")
 			{
-				document.getElementById("false3").style.display="block";
-				document.getElementById("true").style.display="none";
+				document.getElementById("true").style.display="block";
+				document.getElementById("false3").style.display="none";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false2").style.display="none";
 			}
@@ -177,17 +177,17 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 <body>
 <div class="ee">
 	<div id="timu">
-	<h2>4.“小荷才露尖尖角，早有蜻蜓立上头”蜻蜓翩翩起舞，这是在描述哪一节气的现象（&nbsp;&nbsp;）</h2>
+	<h2>5.哪个节气当天，白天最短，黑夜最长（&nbsp;&nbsp;）</h2>
 	<form action="" method="post" name="myform" id="myform">
 		<ul style="list-style: none">
 		<li id="anniu1">
 		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">A.春分</li>
 		<li id="anniu2">
-		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.白露</li>
+		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.夏至</li>
 		<li id="anniu3">
-		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.小满</li>
+		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.秋分</li>
 		<li id="anniu4">
-		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.夏至</li>
+		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.冬至</li>
 		</ul>
 		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
 		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
@@ -203,11 +203,11 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	</div>
 	
 	<div>
-	<a href="test3.html">
+	<a href="test4.html">
 	<img src="images/zuojiantou.png" alt="" width="130px" height="80px" id="syy"></a>
 	</div>
 	<div>
-	<a href="test5.html">
+	<a href="test6.html">
 	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
 	</div>
 </div>

@@ -65,22 +65,22 @@
 	#true{
 		position: absolute;
 		top:80px;
-		left:350px;
+		left:370px;
 	}
 	#false1{
 		position: absolute;
 		top:80px;
-		left:170px;
+		left:150px;
 	}
 	#false2{
 		position: absolute;
 		top:140px;
-		left:170px;
+		left:150px;
 	}
 	#false3{
 		position: absolute;
 		top:140px;
-		left:350px;
+		left:370px;
 	}
 	#tishi{
 		position: absolute;
@@ -132,15 +132,15 @@ function myfunction()
 		var daan=document.myform.answer.value;
 		if(daan=="answer1")
 			{
-				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="block";
+				document.getElementById("true").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
 			}
 		else if(daan=="answer2")
 			{
-				document.getElementById("false1").style.display="none";
 				document.getElementById("true").style.display="block";
+				document.getElementById("false1").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
 			}
@@ -177,17 +177,17 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 <body>
 <div class="ee">
 	<div id="timu">
-	<h2>3.清明的习俗有（&nbsp;&nbsp;）</h2>
+	<h2>3.下列哪个不是清明的习俗（&nbsp;&nbsp;）</h2>
 	<form action="" method="post" name="myform" id="myform">
 		<ul style="list-style: none">
 		<li id="anniu1">
-		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">A.贴春联</li>
+		<input type="radio" value="answer1" name="answer" onClick="javascript:anniu1.className='xuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">A.踏青</li>
 		<li id="anniu2">
-		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.扫墓</li>
+		<input type="radio" value="answer2" name="answer" onClick="javascript:anniu2.className='xuanzhong';anniu1.className='buxuanzhong';anniu3.className='buxuanzhong';anniu4.className='buxuanzhong';">B.吃粽子</li>
 		<li id="anniu3">
-		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.吃饺子</li>
+		<input type="radio" value="answer3" name="answer" onClick="javascript:anniu3.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu4.className='buxuanzhong';">C.扫墓</li>
 		<li id="anniu4">
-		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.赏月</li>
+		<input type="radio" value="answer4" name="answer" onClick="javascript:anniu4.className='xuanzhong';anniu1.className='buxuanzhong';anniu2.className='buxuanzhong';anniu3.className='buxuanzhong';">D.吃青团</li>
 		</ul>
 		<input type="button" value="提交" name="submit" id="tijiao" onClick="myfunction()">
 		<img src="images/true.png" alt="" width="50px" height="50px" id="true" style="display: none">
@@ -201,13 +201,14 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	<a href="contents.html">
 	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)"></a>
 	</div>
-	<div>
-	<a href="test4.html">
-	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
-	</div>
+	
 	<div>
 	<a href="test2.html">
 	<img src="images/zuojiantou.png" alt="" width="130px" height="80px" id="syy"></a>
+	</div>
+	<div>
+	<a href="test4.html">
+	<img src="images/youjiantou.png" alt="" width="130px" height="80px" id="xyy"></a>
 	</div>
 </div>
 </body>
