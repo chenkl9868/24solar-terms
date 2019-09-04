@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>二十四节气知多少-立冬</title>
 <style type="text/css">
-body{
+	body{
 		margin: 0;
 	}
 	.dd{
@@ -13,79 +13,190 @@ body{
 		height: 620px;
 		margin: 0 auto;
 	}
-	#renwu{
+	#biaoti{
 		position: absolute;
-		top: 440px;
-		left: 450px;
+		top: 50px;
+		right: 50px;
 	}
-	#baioti{
+	#laoshi1{
 		position: absolute;
 		top: 50px;
 		left: 80px;
-		font-size: 90px;
+	}
+	#huangkuang1{
+		position: absolute;
+		top: 50px;
+		left: 140px;
+	}
+	#laoshihua1{
+		position: absolute;
+		top: 55px;
+		left: 200px;
+		width: 450px;
+		font-weight: bolder;
 		font-family: 幼圆;
 	}
-	#jianjie{
+	#nanhai1{
 		position: absolute;
-		top: 20px;
-		left: 320px;
-		width: 600px;
-		height: 300px;
-		font-size: 25px;
+		top: 150px;
+		left: 600px;
 	}
-	#talk{
+	#lankuang1{
 		position: absolute;
-		top: 120px;
-		left: 50px;
+		top: 150px;
+		left: 40px;
 	}
-	#shi{
+	#nanhaihua1{
 		position: absolute;
-		top: 270px;
+		top: 160px;
+		left: 95px;
+		width: 450px;
+		font-weight: bolder;
+		font-family: 幼圆;
+	}
+	#laoshi2{
+		position: absolute;
+		top: 250px;
+		left: 80px;
+	}
+	#huangkuang2{
+		position: absolute;
+		top: 250px;
+		left: 140px;
+	}
+	#laoshihua2{
+		position: absolute;
+		top: 255px;
+		left: 200px;
+		width: 450px;
+		font-weight: bolder;
+		font-family: 幼圆;
+	}
+	#nvhai1{
+		position: absolute;
+		top: 350px;
+		left: 600px;
+	}
+	#hongkuang1{
+		position: absolute;
+		top: 350px;
+		left: 80px;
+	}
+	#nvhaihua1{
+		position: absolute;
+		top: 360px;
 		left: 120px;
-		font-size: 22px;
+		width: 450px;
+		font-weight: bolder;
+		font-family: 幼圆;
 	}
-	#return{
+	#nanhai2{
 		position: absolute;
-		top: 520px;
-		left: 220px;
+		top: 450px;
+		left: 600px;
 	}
-	#return:hover{
-		cursor: pointer;
-		transform:scale(1.1);
+	#lankuang2{
+		position: absolute;
+		top: 460px;
+		left: 210px;
+	}
+	#nanhaihua2{
+		position: absolute;
+		top: 460px;
+		left: 245px;
+		font-weight: bolder;
+		font-family: 幼圆;
+	}
+	#chahua{
+		position: absolute;
+		top: 450px;
+		left: 30px
+	}
+	#fanhui{
+		position: absolute;
+		top: 550px;
+		left: 780px;
+	}
+	#shangyiye{
+		position: absolute;
+		top: 550px;
+		left: 840px;
+	}
+	#xiayiye{
+		position: absolute;
+		top: 550px;
+		left: 920px;
 	}
 </style>
-<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
-<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
-<script type="text/javascript">
-function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
-{
-    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
-}
-</script>
 </head>
 
 <body>
 <div class="dd">
 	<img src="images/dongbeijing.png" alt="" width="1000px" height="620px">
-	<div id="renwu">
-	<img src="images/dong1_01.png" alt="" width="180px" height="180px">
+	<div id="biaoti">
+		<img src="images/zilidong.png" alt="" width="200px" height="300px">
 	</div>
-	<div id="baioti">立冬</div>
-	<div id="jianjie">
-	<p>&nbsp;&nbsp;立冬就是冬季的开始，秋季作物已经全部收晒完毕收藏入库，动物也已藏起来准备冬眠。</p>
-	<p>&nbsp;&nbsp;立冬在我国很多地方被当做重要的节日来庆祝，贺冬以求赐来岁的丰年。立冬北方地区有吃饺子的习惯。人们也开始倾向进食驱寒的食物，称为“补冬”。</p>
+	<div id="laoshi1">
+		<img src="images/laoshi.png" alt="" width="80px" height="80px">
 	</div>
-	<div id="talk">
-	<img src="images/talk3.png" alt="" width="500px" height="530px">
+	<div id="huangkuang1">
+		<img src="images/duihuakuang3.png" alt="" width="550px" height="90px">
 	</div>
-	<div id="shi">
-	<p align="center"><b>立冬</b><br></p>
-		<p>秋风吹尽旧庭柯,黄叶丹枫客里过。<br>一点禅灯半轮月,今宵寒较昨宵多。
-</p>
+	<div id="laoshihua1">
+		<p>立冬就是冬季的开始，秋季作物已经全部收晒完毕收藏入库，动物也已藏起来准备冬眠。</p>
 	</div>
-	<div>
-	<a href="jieqimulu4.html">
-	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)">	</a>
+	
+	<div id="nanhai1">
+		<img src="images/nanhai.png" alt="" width="80px" height="80px">
+	</div>
+	<div id="lankuang1">
+		<img src="images/duihuakuang2.png" alt="" width="550px" height="90px">
+	</div>
+	<div id="nanhaihua1">
+		<p>冬天终于来了，我喜欢冬天！细雨生寒未有霜，庭前木叶半青黄。小春此去无多日，何处梅花一绽香。</p>
+	</div>
+	
+	<div id="laoshi2">
+		<img src="images/laoshi.png" alt="" width="80px" height="80px">
+	</div>
+	<div id="huangkuang2">
+		<img src="images/duihuakuang3.png" alt="" width="550px" height="90px">
+	</div>
+	<div id="laoshihua2">
+		<p>我国很多地方把立冬当做重要的节日来庆祝，贺冬以求赐来岁的丰年。立冬还有吃饺子的习俗。</p>
+	</div>
+	
+	<div id="nvhai1">
+		<img src="images/nvhai.png" alt="" width="80px" height="80px">
+	</div>
+	<div id="hongkuang1">
+		<img src="images/duihuakuang1.png" alt="" width="550px" height="90px">
+	</div>
+	<div id="nvhaihua1">
+		<p>立冬是饺子，是因为饺子的形状像耳朵，吃了它，冬天耳朵就不受冻了。</p>
+	</div>
+	
+	<div id="nanhai2">
+		<img src="images/nanhai.png" alt="" width="80px" height="80px">
+	</div>
+	<div id="lankuang2">
+		<img src="images/duihuakuang2.png" alt="" width="380px" height="60px">
+	</div>
+	<div id="nanhaihua2">
+		<p>怪不得我妈今天包了饺子，回家吃饺子去喽！</p>
+	</div>
+	
+	<div id="chahua">
+		<img src="images/dong_01.png" alt="" width="150px" height="150px">
+	</div>
+	<div id="fanhui">
+		<a href="jieqimulu4.html"><img src="images/fanhui2.png" alt="" width="60px" height="60px"></a>
+	</div>
+	<div id="shangyiye">
+		<a href="shuangjiang.html"><img src="images/shangyiye.png" alt="" width="70px" height="60px"></a>
+	</div>
+	<div id="xiayiye">
+		<a href="xiaoxue.html"><img src="images/xiayiye.png" alt="" width="70px" height="60px"></a>
 	</div>
 </div>
 </body>
