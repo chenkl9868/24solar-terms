@@ -78,6 +78,9 @@
 		margin-top: -30px;
 		margin-left: 100px;
 	}
+	#anniu:hover{
+		transform: scale(1.2);
+	}
 	#f1{
 		position: absolute;
 		top:20px;
@@ -148,6 +151,32 @@
 	p:hover{
 		cursor: pointer;
 	}
+	#laba{
+		position: absolute;
+		top: 28px;
+		left: 380px;
+	}
+	#lb_button{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 60px;
+		height: 60px;
+		opacity: 0;
+	}
+	#jingyin{
+		position: absolute;
+		top: 40px;
+		left: 460px;
+	}
+	#jy_button{
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+	}
 </style>
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
@@ -163,10 +192,22 @@ function show(num)
 			}
 		document.getElementById("w"+num).style.display="block";
 	}
+	
 function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 {
     obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
 }
+	
+function PlaySound1(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+function StopSound1(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}
+
 </script>
 </head>
 
@@ -202,7 +243,12 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 		每月两节不变更，最多相差一两天。<br>
 		上半年来六廿一，下半年是八廿三。<br>
 		<p id="pinyin">(廿：<font face="Arial" size="+2">niàn</font>)</p>
-	</p>                                                                                               
+	</p> 
+	  <div id="laba"><img src="images/laba.png" alt="" width="80px" height="80px">
+	  <button id="lb_button" onClick="PlaySound1('sound1')"></button> 
+	  </div>
+	  <div id="jingyin"><img src="images/jingyin.png" alt="" width="85px" height="55px">
+		  <button id="jy_button" onClick="StopSound1('sound1')"></button></div>
 	</div>
 		
 	<div id="w2" style="display: none">
@@ -232,6 +278,10 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	<a href="contents.html">
 	<img src="images/fanhui.png" alt="" width="150px" height="90px" id="return" onMouseOver="MM_DW_effectShake($(this),'effect','shake','left',20,3,2000)"></a>
 	</div>
+	
+	<audio id="sound1" hidden>
+	<source src="music/jieqige.mp3" type="audio/mp3">
+	</audio>
 </div>
 </body>
 </html>

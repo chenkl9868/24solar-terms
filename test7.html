@@ -110,21 +110,26 @@
 function myfunction()
 	{
 		var daan=document.myform.answer.value;
+		var audio1 = document.getElementById('music1'); 
+		var audio2 = document.getElementById('music2'); 
 		if(daan=="answer1")
 			{
 				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="block";
+				audio2.play();
 			}
 		else if(daan=="answer2")
 			{
 				document.getElementById("false1").style.display="none";
 				document.getElementById("true").style.display="block";
+				audio1.play(); 
 			}
 		else
 			{
 				document.getElementById("tishi").style.display="block";
 				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="none";
+				audio2.play();
 			}
 	}
 function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
@@ -150,6 +155,13 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 		<img src="images/false.png" alt="" width="50px" height="50px" id="false1" style="display: none">
 	  <div id="tishi" style="display: none">还没答题哦！</div>
 	</form>
+		
+	<audio id="music1" controls preload hidden>
+	<source src="music/true.wav" type="audio/wav">	
+	</audio>
+	<audio id="music2" controls preload hidden>
+	<source src="music/false.mp3" type="audio/mp3">	
+	</audio>
 	</div>
 	<div>
 	<a href="contents.html">

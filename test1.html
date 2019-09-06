@@ -121,12 +121,16 @@
 function myfunction()
 	{
 		var daan=document.myform.answer.value;
+		var audio1 = document.getElementById('music1'); 
+		var audio2 = document.getElementById('music2'); 
+
 		if(daan=="answer1")
 			{
 				document.getElementById("true").style.display="block";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
+				audio1.play(); 
 			}
 		else if(daan=="answer2")
 			{
@@ -134,6 +138,7 @@ function myfunction()
 				document.getElementById("true").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
+				audio2.play(); 
 			}
 		else if(daan=="answer3")
 			{
@@ -141,6 +146,7 @@ function myfunction()
 				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false3").style.display="none";
+				audio2.play(); 
 			}
 		else if(daan=="answer4")
 			{
@@ -148,6 +154,7 @@ function myfunction()
 				document.getElementById("true").style.display="none";
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false2").style.display="none";
+				audio2.play(); 
 			}
 		else
 			{
@@ -156,6 +163,7 @@ function myfunction()
 				document.getElementById("false1").style.display="none";
 				document.getElementById("false2").style.display="none";
 				document.getElementById("false3").style.display="none";
+				audio2.play(); 
 			}
 	}
 function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
@@ -168,7 +176,7 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 <body>
 <div class="ee">
 	<div id="timu">
-	<h2>1.谚语“打春冻人不冻水”是指什么节气？（&nbsp;&nbsp;）</h2>
+	<h2>1.诗句“东风带雨逐西风，大地阳和暖气生”是指什么节气？（&nbsp;&nbsp;）</h2>
 	<form action="" method="post" name="myform" id="myform">
 		<ul style="list-style: none">
 		<li id="anniu1">
@@ -187,6 +195,13 @@ function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 	  <img src="images/false.png" alt="" width="50px" height="50px" id="false3" style="display: none">
 	  <div id="tishi" style="display: none">还没答题哦！</div>
 	</form>
+		
+	<audio id="music1" controls preload hidden>
+	<source src="music/true.wav" type="audio/wav">	
+	</audio>
+	<audio id="music2" controls preload hidden>
+	<source src="music/false.mp3" type="audio/mp3">	
+	</audio>
 	</div>
 	<div>
 	<a href="contents.html">

@@ -125,7 +125,44 @@
 		top: 550px;
 		left: 920px;
 	}
+	#laba{
+		position: absolute;
+		top: 55px;
+		left: 670px;
+	}
+	#lb_button{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 35px;
+		height: 35px;
+		opacity: 0;
+	}
+	#jingyin{
+		position: absolute;
+		top: 62px;
+		left: 710px;
+	}
+	#jy_button{
+		position: absolute;
+		top: 5px;
+		left: 15px;
+		width: 35px;
+		height: 35px;
+		opacity: 0;
+	}
 </style>
+<script type="text/javascript">
+function PlaySound1(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.play();
+}
+function StopSound1(soundobj) {
+    var thissound=document.getElementById(soundobj);
+    thissound.pause();
+    thissound.currentTime = 0;
+}	
+</script>
 </head>
 
 <body>
@@ -138,10 +175,16 @@
 		<img src="images/laoshi.png" alt="" width="80px" height="80px">
 	</div>
 	<div id="huangkuang1">
-		<img src="images/duihuakuang3.png" alt="" width="400px" height="60px">
+		<img src="images/duihuakuang3.png" alt="" width="450px" height="60px">
 	</div>
 	<div id="laoshihua1">
 		<p>同学们，现在我朗诵一首诗给大家听。</p>
+	</div>
+	<div id="laba"><img src="images/laba2.png" alt="" width="50px" height="50px">
+	<button id="lb_button" onClick="PlaySound1('sound1')"></button>
+	</div>
+	<div id="jingyin"><img src="images/jingyin2.png" alt="" width="65px" height="35px">
+		  <button id="jy_button" onClick="StopSound1('sound1')"></button>
 	</div>
 	
 	<div id="nanhai1" lt="" width="80px" height="80px">
@@ -196,6 +239,10 @@
 	<div id="xiayiye">
 		<a href="jingzhe.html"><img src="images/xiayiye.png" alt="" width="70px" height="60px"></a>
 	</div>
+	
+	<audio id="sound1" hidden>
+	<source src="music/chunyexiyu.ogg" type="audio/ogg">
+	</audio>
 </div>
 </body>
 </html>
